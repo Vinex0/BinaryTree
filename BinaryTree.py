@@ -1,5 +1,3 @@
-import random
-
 class Node:
     def __init__(self, value, left=None, right=None):
         self.value = value
@@ -28,7 +26,6 @@ class Node:
         if self.right is not None:
             self.right.visit_node()
 
-
     def check_node(self, num):
         if self.value == num:
             print(f"Found {num}")
@@ -43,7 +40,6 @@ class Tree:
     def __init__(self, root=None):
         self.root = root
 
-    
     def add_to_root(self, new_value):
         if self.root is None:
             self.root = new_value
@@ -55,5 +51,3 @@ class Tree:
 
     def search(self, num):
         self.root.check_node(num)
-
-
